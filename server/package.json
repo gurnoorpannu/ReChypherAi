@@ -1,0 +1,23 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend services for the scanning and dustbin management system.",
+  "main": "api-service/server.js",
+  "scripts": {
+    "start": "node api-service/server.js",
+    "ml-worker": "node ml-worker/worker.js",
+    "processor-worker": "node processor-worker/worker.js",
+    "dev": "nodemon api-service/server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.9",
+    "kafkajs": "^1.15.0",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
